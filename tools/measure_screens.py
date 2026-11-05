@@ -20,7 +20,7 @@ ASSETS = os.path.join(ROOT, "assets", "cameras")
 
 # 官方屏幕规格：dots → 分辨率 → 显示区宽高比。
 # 相机行业惯例 dots = 宽×高×3（RGB 子像素）。
-# 来源：各品牌官方规格页（见 docs/design/README.md 的屏幕一节）。
+# 来源：各品牌官方规格页（见 docs/cameras.md 的「屏幕显示区比例」一节）。
 SPECS = {
     # ---- Leica ----
     "m9":              ("2.5\"", 230400,  320, 240, "4:3"),
