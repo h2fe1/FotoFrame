@@ -39,7 +39,6 @@
 | Sony | RX1R III | `SONY` / `DSC-RX1RM3` |
 
 > Leica Q3 43 与 Q3 机身外观相同，不单独建资产：EXIF `LEICA Q3 43` 直接复用 Q3 的背面图和屏幕标定。
-> ⚠️ Leica M-D / M10-D / M11-D 无屏幕，无法套壳，不支持。
 
 完整匹配规则与逐台说明见 [docs/supported_cameras.md](docs/supported_cameras.md)。
 
