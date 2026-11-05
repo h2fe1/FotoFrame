@@ -138,4 +138,4 @@ cd app
 
 ## License
 
-[MIT](LICENSE) © 2026 Fei He
+[MIT](LICENSE) © 2026 FotoFrame contributors
