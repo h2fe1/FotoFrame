@@ -3,21 +3,45 @@
 把照片「套」回拍摄它的相机里：读取照片 EXIF 自动识别相机型号，
 把照片合成进对应相机官方背面图的屏幕区域，下方排布原始照片，导出成图。
 
-## 当前状态
+![FotoFrame 界面](renders/ui_screenshot.png)
 
-- ✅ macOS 版可构建运行（Flutter 3.47.9 stable）
-- ✅ 核心逻辑纯 Dart、零 Flutter 依赖（`app/lib/core/`），为 Windows/Android/iOS 移植做好准备
-- ✅ **26 台相机资产**（全部按实物素材逐一标定屏幕四角；Q3 43 与 Q3 外观相同，共用 Q3 背面图）
-  - Hasselblad：X2D 100C、X2D II 100C、CFV 100C
-  - Ricoh：GR II、GR III、GR IIIx、GR III HDF、GR IV
-  - Sony：A1 II、A7C II、A7 III、A7 IV、A7 V、A7R III、A7R IV、A7R V、RX1R II、RX1R III
-  - Panasonic：S1R II、S1 II、S9
-  - Leica：D-LUX 8、Q2、Q3（含 Q3 43 别名）、SL2、SL3
-  （更早的一批旧资产（48 台）已不再保留，不参与构建）
-- ✅ 界面：A 工具栏 + C 纸面排版的工作台（当前照片 · 作品 · 队列），浅色/深色跟随 macOS 自动切换
-- ✅ 拖拽导入、批量导出、复制到剪贴板
-- ✅ 端到端验证通过：真实 macOS 应用读样片 → EXIF 识别（索尼 ILCE 别名）→ 渲染导出
-- ⚠️ 徕卡 M-D / M10-D / M11-D 无屏幕，不支持套壳
+## 支持的相机机型（26 台）
+
+读取 EXIF `Make` / `Model` 自动匹配；索尼按 ILCE 内部编号映射，不支持的机型会明确提示。
+
+| 品牌 | 机型 | EXIF Make / Model |
+|---|---|---|
+| Hasselblad | X2D 100C | `Hasselblad` / `X2D 100C` |
+| Hasselblad | X2D II 100C | `Hasselblad` / `X2D II 100C` |
+| Hasselblad | CFV 100C | `Hasselblad` / `CFV 100C` |
+| Leica | D-LUX 8 | `LEICA CAMERA AG` / `LEICA D-LUX 8` |
+| Leica | Q2 | `LEICA CAMERA AG` / `LEICA Q2` |
+| Leica | Q3 | `LEICA CAMERA AG` / `LEICA Q3` |
+| Leica | SL2 | `LEICA CAMERA AG` / `LEICA SL2` |
+| Leica | SL3 | `LEICA CAMERA AG` / `LEICA SL3` |
+| Panasonic | S1 II | `Panasonic` / `DC-S1M2` |
+| Panasonic | S1R II | `Panasonic` / `DC-S1RM2` |
+| Panasonic | S9 | `Panasonic` / `DC-S9` |
+| Ricoh | GR II | `RICOH IMAGING COMPANY, LTD.` / `RICOH GR II` |
+| Ricoh | GR III | `RICOH IMAGING COMPANY, LTD.` / `RICOH GR III` |
+| Ricoh | GR IIIx | `RICOH IMAGING COMPANY, LTD.` / `RICOH GR IIIx` |
+| Ricoh | GR III HDF | `RICOH IMAGING COMPANY, LTD.` / `RICOH GR III HDF` |
+| Ricoh | GR IV | `RICOH IMAGING COMPANY, LTD.` / `RICOH GR IV` |
+| Sony | A1 II | `SONY` / `ILCE-1M2` |
+| Sony | A7C II | `SONY` / `ILCE-7CM2` |
+| Sony | A7 III | `SONY` / `ILCE-7M3` |
+| Sony | A7 IV | `SONY` / `ILCE-7M4` |
+| Sony | A7 V | `SONY` / `ILCE-7M5` |
+| Sony | A7R III | `SONY` / `ILCE-7RM3` |
+| Sony | A7R IV | `SONY` / `ILCE-7RM4` |
+| Sony | A7R V | `SONY` / `ILCE-7RM5` |
+| Sony | RX1R II | `SONY` / `DSC-RX1RM2` |
+| Sony | RX1R III | `SONY` / `DSC-RX1RM3` |
+
+> Leica Q3 43 与 Q3 机身外观相同，不单独建资产：EXIF `LEICA Q3 43` 直接复用 Q3 的背面图和屏幕标定。
+> ⚠️ Leica M-D / M10-D / M11-D 无屏幕，无法套壳，不支持。
+
+完整匹配规则与逐台说明见 [docs/supported_cameras.md](docs/supported_cameras.md)。
 
 ## 功能
 
@@ -30,9 +54,18 @@
 | 批量导出 | 选一个文件夹，按 `<原名>_framed.png` 全部导出 |
 | 主题 | 固定相纸灰背景 · 底部原图左右下三边出血贴边 · 3 档版式松紧 · 输出长边 1600/2400/3200 |
 | 外观 | 跟随系统浅色/深色；窗口无标题栏，工具栏与红绿灯同高 |
-| 屏幕 | 相机屏幕按官方显示区比例（4:3 / 3:2 / 16:9，逐台校准）cover 裁剪填入，四周保留边框；比例不符的机型（如 a6600 的 16:9 屏）按真实相机留黑边；标注了 `screen.opening` 的 29 台先把玻璃开口压黑，照片外不会留一圈玻璃灰 |
+| 屏幕 | 相机屏幕按官方显示区比例（4:3 / 3:2 / 16:9，逐台校准）cover 裁剪填入，四周保留边框；比例不符的机型按真实相机留黑边 |
 | 复制 | ⌘⇧C 把成图以 PNG 写入系统剪贴板（NSPasteboard） |
 | 快捷键 | ⌘O 导入 · ⌘E 导出当前 · ⌘⇧C 复制 |
+
+## 当前状态
+
+- ✅ macOS 版可构建运行（Flutter 3.47.9 stable）
+- ✅ 核心逻辑纯 Dart、零 Flutter 依赖（`app/lib/core/`），为 Windows/Android/iOS 移植做好准备
+- ✅ 26 台相机资产全部按实物素材逐一标定屏幕四角
+- ✅ 界面：工具栏 + 纸面排版的工作台（当前照片 · 作品 · 队列），浅色/深色跟随 macOS 自动切换
+- ✅ 拖拽导入、批量导出、复制到剪贴板
+- ✅ 端到端验证通过：真实 macOS 应用读样片 → EXIF 识别（索尼 ILCE 别名）→ 渲染导出
 
 ## 目录
 
@@ -43,10 +76,11 @@ app/            Flutter 应用（macOS 先行，可扩展 Windows/Android/iOS）
   lib/services/ 渲染服务（解码/合成/编码，UI 无关）
   lib/platform/ 平台通道（拖拽、剪贴板）
   lib/ui/       界面
-assets/cameras/ 相机背面图资产（官方产品图 + meta.json 屏幕标注 + EXIF 匹配规则）
+  assets/cameras/ 相机背面图资产（扁平化打包 + catalog.json 屏幕标注与 EXIF 匹配规则）
+assets/cameras/ 相机资产源文件（官方产品图 + meta.json，不入库，见 .gitignore）
 tools/          资产与构建工具
 samples/        带真实 EXIF 的测试样片（jpg / png / heic）
-renders/        界面截图（全机型渲染样张由 `flutter test` 按需重新生成）
+renders/        界面截图（各机型渲染样张由 `flutter test` 按需重新生成，不入库）
 docs/           架构与机型文档
 ```
 
@@ -89,6 +123,9 @@ cd app
 3. `tools/trim_assets.py` 裁白边（原图备份为 back_untrimmed）
 4. 手工修正个别标注（亮屏图、反光渐变图自动检测会偏差）
 5. `tools/sync_assets.sh` 打包
+
+> 相机背面图取自各品牌官方产品图，原始资产（`assets/cameras/`）不随仓库分发；
+> 仓库内 `app/assets/cameras/` 已包含打包好的运行所需文件，可直接构建运行。
 
 ## 移植路线
 
