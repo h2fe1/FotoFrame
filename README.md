@@ -135,3 +135,7 @@ cd app
 - `lib/render/` 仅依赖 Flutter Canvas——全 Flutter 平台通用
 - `lib/platform/` 与 UI 层按需替换：Windows 用同套 Flutter 桌面支持；
   Android/iOS 替换文件选择/保存为系统相册 API
+
+## License
+
+[MIT](LICENSE) © 2026 Fei He
