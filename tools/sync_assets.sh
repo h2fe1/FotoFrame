@@ -43,6 +43,9 @@ for brand in sorted(os.listdir(src)):
         flat = f"{brand}__{slug}{os.path.splitext(img)[1]}"
         shutil.copy2(img, os.path.join(dst, flat))
         meta["image"] = flat
+        # source_url 归一化为文件名，避免把本机绝对路径写进公开仓库
+        if meta.get("source_url"):
+            meta["source_url"] = os.path.basename(meta["source_url"])
         catalog.append(meta)
         print(f"[ok] {brand}/{slug} -> {flat}")
 

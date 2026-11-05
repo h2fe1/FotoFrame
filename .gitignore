@@ -6,6 +6,11 @@ assets/cameras/
 docs/design/
 renders/*_framed.png
 
+# 本地草稿与缓存（不公开）
+.work/
+__pycache__/
+*.pyc
+
 # Flutter/Dart
 .dart_tool/
 build/
