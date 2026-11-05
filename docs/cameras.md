@@ -17,11 +17,9 @@
 |---|---|---|---|
 | D-LUX 8 | `LEICA D-LUX 8` | `d-lux8` | |
 | Q2 | `LEICA Q2` | `q2` | |
-| Q3 | `LEICA Q3` | `q3` | Q3 43 外观相同，EXIF `LEICA Q3 43` 复用本资产 |
+| Q3 | `LEICA Q3` | `q3` | |
 | SL2 | `LEICA SL2` | `sl2` | |
 | SL3 | `LEICA SL3` | `sl3` | |
-
-> ⚠️ M-D (Typ 262) / M10-D / M11-D 无屏幕，无法套壳，不支持。
 
 ## Panasonic（EXIF Make: `Panasonic`）
 

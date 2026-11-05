@@ -3,6 +3,11 @@
 把照片「套」回拍摄它的相机里：读取照片 EXIF 自动识别相机型号，
 把照片合成进对应相机官方背面图的屏幕区域，下方排布原始照片，导出成图。
 
+## 下载
+
+[**⬇️ 下载 macOS 安装包（v1.0.0）**](https://github.com/h2fe1/FotoFrame/releases/latest)  
+Universal（Apple Silicon / Intel）· macOS 12+ · 首次打开需右键 → 打开
+
 ![FotoFrame 界面](renders/ui_screenshot.png)
 
 ## 支持的相机机型（26 台）
@@ -37,8 +42,6 @@
 | Sony | A7R V | `SONY` / `ILCE-7RM5` |
 | Sony | RX1R II | `SONY` / `DSC-RX1RM2` |
 | Sony | RX1R III | `SONY` / `DSC-RX1RM3` |
-
-> Leica Q3 43 与 Q3 机身外观相同，不单独建资产：EXIF `LEICA Q3 43` 直接复用 Q3 的背面图和屏幕标定。
 
 完整匹配规则与逐台说明见 [docs/supported_cameras.md](docs/supported_cameras.md)。
 
