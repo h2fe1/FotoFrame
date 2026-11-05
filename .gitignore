@@ -1,0 +1,13 @@
+# Toolchain & assets
+.toolchain/
+assets/cameras/
+
+# Flutter/Dart
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+pubspec.lock
+app/macos/Flutter/ephemeral/
+app/macos/Pods/

@@ -1,0 +1,1044 @@
+[
+  {
+    "brand": "Hasselblad",
+    "model": "CFV 100C",
+    "slug": "cfv100c",
+    "source_url": "/Users/fei/Desktop/camds/Hasselblad CFV 100C.jpg",
+    "source_page": "",
+    "width": 1636,
+    "height": 1463,
+    "notes": "camds 原始图 Hasselblad CFV 100C.jpg（8992x7194）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "hasselblad__cfv100c.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          308.8,
+          370.7
+        ],
+        [
+          1300.9,
+          370.7
+        ],
+        [
+          1300.9,
+          1112.0
+        ],
+        [
+          308.8,
+          1112.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^HASSELBLAD"
+      ],
+      "model_patterns": [
+        "^CFV 100C$"
+      ]
+    }
+  },
+  {
+    "brand": "Hasselblad",
+    "model": "X2D 100C",
+    "slug": "x2d",
+    "source_url": "/Users/fei/Desktop/camds/Hasselblad X2D 100C.jpg",
+    "source_page": "",
+    "width": 3105,
+    "height": 2261,
+    "notes": "camds 原始图 Hasselblad X2D 100C.jpg（5000x5000）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "hasselblad__x2d.png",
+    "screen": {
+      "quad": [
+        [
+          302.4,
+          783.1
+        ],
+        [
+          1826.4,
+          783.1
+        ],
+        [
+          1826.4,
+          1909.5
+        ],
+        [
+          302.4,
+          1909.5
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^Hasselblad"
+      ],
+      "model_patterns": [
+        "^X2D 100C$"
+      ]
+    },
+    "trimmed": true
+  },
+  {
+    "brand": "Hasselblad",
+    "model": "X2D II 100C",
+    "slug": "x2d2",
+    "source_url": "/Users/fei/Desktop/camds/Hasselblad X2D II 100C.jpg",
+    "source_page": "",
+    "width": 2578,
+    "height": 1979,
+    "notes": "camds 原始图 Hasselblad X2D II 100C.jpg（5950x4277）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "hasselblad__x2d2.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          224,
+          646
+        ],
+        [
+          1518,
+          646
+        ],
+        [
+          1518,
+          1618
+        ],
+        [
+          224,
+          1618
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^HASSELBLAD"
+      ],
+      "model_patterns": [
+        "^X2D II 100C$"
+      ]
+    }
+  },
+  {
+    "brand": "Leica",
+    "model": "D-LUX 8",
+    "slug": "d-lux8",
+    "source_url": "/Users/fei/Desktop/camds/Leica D-LUX 8.jpg",
+    "source_page": "",
+    "width": 1627,
+    "height": 882,
+    "notes": "camds 原始图 Leica D-LUX 8.jpg（1920x1440）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "leica__d-lux8.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          326.0,
+          276.0
+        ],
+        [
+          1121.0,
+          276.0
+        ],
+        [
+          1121.0,
+          812.0
+        ],
+        [
+          326.0,
+          812.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^LEICA"
+      ],
+      "model_patterns": [
+        "^LEICA D-LUX 8$"
+      ]
+    }
+  },
+  {
+    "brand": "Leica",
+    "model": "Q2",
+    "slug": "q2",
+    "source_url": "/Users/fei/Desktop/camds/Leica Q2.jpg",
+    "source_page": "",
+    "width": 927,
+    "height": 557,
+    "notes": "camds 原始图 Leica Q2.jpg（1147x887）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "leica__q2.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          169.0,
+          169.0
+        ],
+        [
+          645.0,
+          169.0
+        ],
+        [
+          645.0,
+          491.0
+        ],
+        [
+          169.0,
+          491.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^LEICA"
+      ],
+      "model_patterns": [
+        "^LEICA Q2$"
+      ]
+    }
+  },
+  {
+    "brand": "Leica",
+    "model": "Q3",
+    "slug": "q3",
+    "source_url": "/Users/fei/Desktop/camds/Leica Q3.jpg",
+    "source_page": "",
+    "width": 1652,
+    "height": 971,
+    "notes": "camds 原始图 Leica Q3.jpg（1920x1440）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "leica__q3.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          246.0,
+          356.0
+        ],
+        [
+          990.0,
+          356.0
+        ],
+        [
+          990.0,
+          854.0
+        ],
+        [
+          246.0,
+          854.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^LEICA"
+      ],
+      "model_patterns": [
+        "^LEICA Q3$",
+        "^LEICA Q3 43$"
+      ]
+    }
+  },
+  {
+    "brand": "Leica",
+    "model": "SL2",
+    "slug": "sl2",
+    "source_url": "/Users/fei/Desktop/camds/Leica SL2.jpg",
+    "source_page": "",
+    "width": 990,
+    "height": 696,
+    "notes": "camds 原始图 Leica SL2.jpg（1000x1000）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "leica__sl2.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          222.0,
+          314.0
+        ],
+        [
+          652.0,
+          314.0
+        ],
+        [
+          652.0,
+          612.0
+        ],
+        [
+          222.0,
+          612.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^LEICA"
+      ],
+      "model_patterns": [
+        "^LEICA SL2$"
+      ]
+    }
+  },
+  {
+    "brand": "Leica",
+    "model": "SL3",
+    "slug": "sl3",
+    "source_url": "/Users/fei/Desktop/camds/Leica SL3.jpg",
+    "source_page": "",
+    "width": 1557,
+    "height": 1127,
+    "notes": "camds 原始图 Leica SL3.jpg（1920x1440）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "leica__sl3.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          216.0,
+          562.0
+        ],
+        [
+          919.0,
+          562.0
+        ],
+        [
+          919.0,
+          1032.0
+        ],
+        [
+          216.0,
+          1032.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^LEICA"
+      ],
+      "model_patterns": [
+        "^LEICA SL3$"
+      ]
+    }
+  },
+  {
+    "brand": "Panasonic",
+    "model": "S1 II",
+    "slug": "s1m2",
+    "source_url": "/Users/fei/Desktop/camds/Panasonic S1 II.jpg",
+    "source_page": "",
+    "width": 1474,
+    "height": 1115,
+    "notes": "camds 原始图 Panasonic S1 II.jpg（1500x1119）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "panasonic__s1m2.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          240.0,
+          587.0
+        ],
+        [
+          924.0,
+          587.0
+        ],
+        [
+          924.0,
+          1045.0
+        ],
+        [
+          240.0,
+          1045.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^PANASONIC"
+      ],
+      "model_patterns": [
+        "^DC-S1M2$"
+      ]
+    }
+  },
+  {
+    "brand": "Panasonic",
+    "model": "S1R II",
+    "slug": "s1r2",
+    "source_url": "/Users/fei/Desktop/camds/Panasonic S1R II.jpg",
+    "source_page": "",
+    "width": 1500,
+    "height": 1123,
+    "notes": "camds 原始图 Panasonic S1R II.jpg（1500x1123）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "panasonic__s1r2.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          246.0,
+          600.0
+        ],
+        [
+          941.0,
+          600.0
+        ],
+        [
+          941.0,
+          1065.0
+        ],
+        [
+          246.0,
+          1065.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^PANASONIC"
+      ],
+      "model_patterns": [
+        "^DC-S1RM2$"
+      ]
+    }
+  },
+  {
+    "brand": "Panasonic",
+    "model": "S9",
+    "slug": "s9",
+    "source_url": "/Users/fei/Desktop/camds/Panasonic S9.jpg",
+    "source_page": "",
+    "width": 1500,
+    "height": 851,
+    "notes": "camds 原始图 Panasonic S9.jpg（1500x851）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "panasonic__s9.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          258.0,
+          294.0
+        ],
+        [
+          981.0,
+          294.0
+        ],
+        [
+          981.0,
+          778.0
+        ],
+        [
+          258.0,
+          778.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^PANASONIC"
+      ],
+      "model_patterns": [
+        "^DC-S9$"
+      ]
+    }
+  },
+  {
+    "brand": "Ricoh",
+    "model": "GR II",
+    "slug": "gr2",
+    "source_url": "/Users/fei/Desktop/camds/Ricoh GR II.jpg",
+    "source_page": "",
+    "width": 1024,
+    "height": 562,
+    "notes": "camds 原始图 Ricoh GR II.jpg（1024x562）；白底抠成透明、保留投影；屏幕四角按屏色（B-R）边界拟合，随屏面轻微倾斜",
+    "image": "ricoh__gr2.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          55,
+          115
+        ],
+        [
+          587,
+          115
+        ],
+        [
+          589,
+          516
+        ],
+        [
+          57,
+          516
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^RICOH"
+      ],
+      "model_patterns": [
+        "^RICOH GR II$"
+      ]
+    }
+  },
+  {
+    "brand": "Ricoh",
+    "model": "GR III",
+    "slug": "gr3",
+    "source_url": "/Users/fei/Desktop/camds/Ricoh GR III.jpg",
+    "source_page": "",
+    "width": 3191,
+    "height": 1944,
+    "notes": "camds 原始图 Ricoh GR III.jpg（3693x2738）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "screen": {
+      "quad": [
+        [
+          522.5,
+          434.2
+        ],
+        [
+          1967.0,
+          434.2
+        ],
+        [
+          1967.0,
+          1348.3
+        ],
+        [
+          522.5,
+          1348.3
+        ]
+      ]
+    },
+    "image": "ricoh__gr3.png",
+    "trimmed": true,
+    "exif": {
+      "make_patterns": [
+        "^RICOH"
+      ],
+      "model_patterns": [
+        "^RICOH GR III$"
+      ]
+    }
+  },
+  {
+    "brand": "Ricoh",
+    "model": "GR III HDF",
+    "slug": "gr3-hdf",
+    "source_url": "/Users/fei/Desktop/camds/Ricoh GR III HDF.jpg",
+    "source_page": "",
+    "width": 2649,
+    "height": 1574,
+    "notes": "camds 原始图 Ricoh GR III HDF.jpg（3303x1858）；白底抠成透明、保留投影；屏幕四角取黑屏区（黑 vs 灰边框）边界拟合，随屏面微透视",
+    "image": "ricoh__gr3-hdf.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          171.4,
+          439
+        ],
+        [
+          1715.3,
+          439
+        ],
+        [
+          1700.9,
+          1424
+        ],
+        [
+          178.0,
+          1424
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^RICOH"
+      ],
+      "model_patterns": [
+        "^RICOH GR III HDF$"
+      ]
+    }
+  },
+  {
+    "brand": "Ricoh",
+    "model": "GR IIIx",
+    "slug": "gr3x",
+    "source_url": "/Users/fei/Desktop/camds/Ricoh GR IIIx.jpg",
+    "source_page": "",
+    "width": 3191,
+    "height": 1944,
+    "notes": "camds 原始图 Ricoh GR IIIx.jpg（3693x2738）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "ricoh__gr3x.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          522.5,
+          434.2
+        ],
+        [
+          1967.0,
+          434.2
+        ],
+        [
+          1967.0,
+          1348.3
+        ],
+        [
+          522.5,
+          1348.3
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^RICOH"
+      ],
+      "model_patterns": [
+        "^RICOH GR IIIx$"
+      ]
+    }
+  },
+  {
+    "brand": "Ricoh",
+    "model": "GR IV",
+    "slug": "gr4",
+    "source_url": "/Users/fei/Desktop/camds/Ricoh GR IV.jpg",
+    "source_page": "",
+    "width": 2577,
+    "height": 1506,
+    "notes": "camds 原始图 Ricoh GR IV.jpg（3698x2601）；白底抠成透明、保留投影；屏幕四角取黑屏区（黑 vs 灰边框）边界拟合",
+    "image": "ricoh__gr4.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          145.7,
+          402
+        ],
+        [
+          1646,
+          402.4
+        ],
+        [
+          1631.8,
+          1364.5
+        ],
+        [
+          138.5,
+          1362.2
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^RICOH"
+      ],
+      "model_patterns": [
+        "^RICOH GR IV$"
+      ]
+    }
+  },
+  {
+    "brand": "Sony",
+    "model": "A1 II",
+    "slug": "a1m2",
+    "source_url": "/Users/fei/Desktop/camds/Sony A1 II.jpg",
+    "source_page": "",
+    "width": 1628,
+    "height": 1132,
+    "notes": "camds 原始图 Sony A1 II.jpg（2000x2000）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "sony__a1m2.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          222.0,
+          474.0
+        ],
+        [
+          999.0,
+          474.0
+        ],
+        [
+          999.0,
+          997.0
+        ],
+        [
+          222.0,
+          997.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^SONY"
+      ],
+      "model_patterns": [
+        "^ILCE-1M2$"
+      ]
+    }
+  },
+  {
+    "brand": "Sony",
+    "model": "A7C II",
+    "slug": "a7c2",
+    "source_url": "/Users/fei/Desktop/camds/Sony A7C II.jpg",
+    "source_page": "",
+    "width": 1676,
+    "height": 914,
+    "notes": "camds 原始图 Sony A7C II.jpg（2000x1346）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "sony__a7c2.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          289.7,
+          318.2
+        ],
+        [
+          1069.4,
+          318.2
+        ],
+        [
+          1069.4,
+          841.9
+        ],
+        [
+          289.7,
+          841.9
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^SONY"
+      ],
+      "model_patterns": [
+        "^ILCE-7CM2$"
+      ]
+    }
+  },
+  {
+    "brand": "Sony",
+    "model": "A7 III",
+    "slug": "a7m3",
+    "source_url": "/Users/fei/Desktop/camds/Sony A7 III.jpg",
+    "source_page": "",
+    "width": 1996,
+    "height": 1403,
+    "notes": "camds 原始图 Sony A7 III.jpg（2000x2000）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "sony__a7m3.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          335.0,
+          607.0
+        ],
+        [
+          1218.0,
+          607.0
+        ],
+        [
+          1218.0,
+          1272.0
+        ],
+        [
+          335.0,
+          1272.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^SONY"
+      ],
+      "model_patterns": [
+        "^ILCE-7M3$"
+      ]
+    }
+  },
+  {
+    "brand": "Sony",
+    "model": "A7 IV",
+    "slug": "a7m4",
+    "source_url": "/Users/fei/Desktop/camds/Sony A7 IV.jpg",
+    "source_page": "",
+    "width": 2467,
+    "height": 1694,
+    "notes": "camds 原始图 Sony A7 IV.jpg（2483x2483）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "sony__a7m4.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          399.0,
+          767.0
+        ],
+        [
+          1506.0,
+          767.0
+        ],
+        [
+          1506.0,
+          1512.0
+        ],
+        [
+          399.0,
+          1512.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^SONY"
+      ],
+      "model_patterns": [
+        "^ILCE-7M4$",
+        "^A7 IV$"
+      ]
+    }
+  },
+  {
+    "brand": "Sony",
+    "model": "A7 V",
+    "slug": "a7m5",
+    "source_url": "/Users/fei/Desktop/camds/Sony A7 V.jpg",
+    "source_page": "",
+    "width": 2101,
+    "height": 1452,
+    "notes": "camds 原始图 Sony A7 V.jpg（2560x1901）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "sony__a7m5.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          287.0,
+          606.0
+        ],
+        [
+          1299.0,
+          606.0
+        ],
+        [
+          1299.0,
+          1284.0
+        ],
+        [
+          287.0,
+          1284.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^SONY"
+      ],
+      "model_patterns": [
+        "^ILCE-7M5$"
+      ]
+    }
+  },
+  {
+    "brand": "Sony",
+    "model": "A7R III",
+    "slug": "a7r3",
+    "source_url": "/Users/fei/Desktop/camds/Sony A7R III.jpg",
+    "source_page": "",
+    "width": 852,
+    "height": 600,
+    "notes": "camds 原始图 Sony A7R III.jpg（975x600）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "sony__a7r3.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          143.0,
+          262.0
+        ],
+        [
+          515.0,
+          262.0
+        ],
+        [
+          515.0,
+          543.0
+        ],
+        [
+          143.0,
+          543.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^SONY"
+      ],
+      "model_patterns": [
+        "^ILCE-7RM3$"
+      ]
+    }
+  },
+  {
+    "brand": "Sony",
+    "model": "A7R IV",
+    "slug": "a7r4",
+    "source_url": "/Users/fei/Desktop/camds/Sony A7R IV.jpg",
+    "source_page": "",
+    "width": 2500,
+    "height": 1746,
+    "notes": "camds 原始图 Sony A7R IV.jpg（2500x2500）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "sony__a7r4.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          425.0,
+          760.0
+        ],
+        [
+          1504.0,
+          760.0
+        ],
+        [
+          1504.0,
+          1568.0
+        ],
+        [
+          425.0,
+          1568.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^SONY"
+      ],
+      "model_patterns": [
+        "^ILCE-7RM4$"
+      ]
+    }
+  },
+  {
+    "brand": "Sony",
+    "model": "A7R V",
+    "slug": "a7r5",
+    "source_url": "/Users/fei/Desktop/camds/Sony A7R V.jpg",
+    "source_page": "",
+    "width": 2453,
+    "height": 1691,
+    "notes": "camds 原始图 Sony A7R V.jpg（3000x2227）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "sony__a7r5.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          325.0,
+          714.0
+        ],
+        [
+          1498.0,
+          714.0
+        ],
+        [
+          1498.0,
+          1499.0
+        ],
+        [
+          325.0,
+          1499.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^SONY"
+      ],
+      "model_patterns": [
+        "^ILCE-7RM5$"
+      ]
+    }
+  },
+  {
+    "brand": "Sony",
+    "model": "RX1R II",
+    "slug": "rx1r2",
+    "source_url": "/Users/fei/Desktop/camds/Sony RX1R II.jpg",
+    "source_page": "",
+    "width": 1379,
+    "height": 788,
+    "notes": "camds 原始图 Sony RX1R II.jpg（1500x1050）；白底抠成透明、保留投影；屏幕四角按显示区 4:3 边界精修",
+    "image": "sony__rx1r2.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          201,
+          210
+        ],
+        [
+          867,
+          210
+        ],
+        [
+          867,
+          710
+        ],
+        [
+          201,
+          710
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^SONY"
+      ],
+      "model_patterns": [
+        "^DSC-RX1RM2$"
+      ]
+    }
+  },
+  {
+    "brand": "Sony",
+    "model": "RX1R III",
+    "slug": "rx1r3",
+    "source_url": "/Users/fei/Desktop/camds/Sony RX1R III.jpg",
+    "source_page": "",
+    "width": 1006,
+    "height": 556,
+    "notes": "camds 原始图 Sony RX1R III.jpg（1026x1026）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
+    "image": "sony__rx1r3.png",
+    "trimmed": true,
+    "screen": {
+      "quad": [
+        [
+          128.0,
+          148.0
+        ],
+        [
+          620.0,
+          148.0
+        ],
+        [
+          620.0,
+          519.0
+        ],
+        [
+          128.0,
+          519.0
+        ]
+      ]
+    },
+    "exif": {
+      "make_patterns": [
+        "^SONY"
+      ],
+      "model_patterns": [
+        "^DSC-RX1RM3$"
+      ]
+    }
+  }
+]
