@@ -8,7 +8,7 @@
 [**⬇️ 下载 macOS 安装包（v1.0.0）**](https://github.com/h2fe1/FotoFrame/releases/latest)  
 Universal（Apple Silicon / Intel）· macOS 12+ · 首次打开需右键 → 打开
 
-![FotoFrame 界面](renders/ui_screenshot.png)
+**纯本地运行**：不联网、不上传照片、不需要账号，所有处理都在本机完成。
 
 ## 支持的相机机型（26 台）
 
@@ -60,6 +60,13 @@ Universal（Apple Silicon / Intel）· macOS 12+ · 首次打开需右键 → �
 | 复制 | ⌘⇧C 把成图以 PNG 写入系统剪贴板（NSPasteboard） |
 | 快捷键 | ⌘O 导入 · ⌘E 导出当前 · ⌘⇧C 复制 |
 
+## 隐私
+
+- **纯本地**：照片只在本机处理，不联网、不上传、不需要账号
+- **无网络权限**：Release 构建启用 macOS App Sandbox，且未申请网络权限，应用无法访问网络
+- **无追踪**：没有遥测、统计、崩溃上报，也不会自动检查更新
+- **文件访问受限**：只读取你主动导入的照片，只写你选择的导出文件夹
+
 ## 当前状态
 
 - ✅ macOS 版可构建运行（Flutter 3.47.9 stable）
@@ -82,7 +89,7 @@ app/            Flutter 应用（macOS 先行，可扩展 Windows/Android/iOS）
 assets/cameras/ 相机资产源文件（官方产品图 + meta.json，不入库，见 .gitignore）
 tools/          资产与构建工具
 samples/        带真实 EXIF 的测试样片（jpg / png / heic）
-renders/        界面截图（各机型渲染样张由 `flutter test` 按需重新生成，不入库）
+renders/        本地渲染输出（不入库）
 docs/           架构与机型文档
 ```
 
