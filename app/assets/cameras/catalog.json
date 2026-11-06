@@ -486,25 +486,25 @@
     "slug": "gr3",
     "source_url": "Ricoh GR III.jpg",
     "source_page": "",
-    "width": 3191,
-    "height": 1944,
+    "width": 2548,
+    "height": 1511,
     "notes": "camds 原始图 Ricoh GR III.jpg（3693x2738）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
     "screen": {
       "quad": [
         [
-          522.5,
+          183.5,
           434.2
         ],
         [
-          1967.0,
+          1628.0,
           434.2
         ],
         [
-          1967.0,
+          1628.0,
           1348.3
         ],
         [
-          522.5,
+          183.5,
           1348.3
         ]
       ]
@@ -566,27 +566,27 @@
     "slug": "gr3x",
     "source_url": "Ricoh GR IIIx.jpg",
     "source_page": "",
-    "width": 3191,
-    "height": 1944,
+    "width": 2548,
+    "height": 1511,
     "notes": "camds 原始图 Ricoh GR IIIx.jpg（3693x2738）；白底抠成透明、保留投影；屏幕四角按熄屏/黑屏边界自动检测，逐台复核",
     "image": "ricoh__gr3x.png",
     "trimmed": true,
     "screen": {
       "quad": [
         [
-          522.5,
+          183.5,
           434.2
         ],
         [
-          1967.0,
+          1628.0,
           434.2
         ],
         [
-          1967.0,
+          1628.0,
           1348.3
         ],
         [
-          522.5,
+          183.5,
           1348.3
         ]
       ]
