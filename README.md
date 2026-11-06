@@ -1,30 +1,26 @@
 # FotoFrame
 
-把照片「套」回拍摄它的相机里：读取照片 EXIF 自动识别相机型号，
+把照片「套」回拍摄它的相机里：读取照片 EXIF 自动识别相机型号，  
 把照片合成进对应相机官方背面图的屏幕区域，下方排布原始照片，导出成图。
 
-## 下载
+## macOS 版
+Universal（Apple Silicon / Intel）· macOS 12+ · 首次打开需右键 → 打开。不联网、不上传照片、不需要账号，所有处理都在本机完成。
 
 [**⬇️ 下载 macOS 安装包（v1.0.0）**](https://github.com/h2fe1/FotoFrame/releases/latest)  
-Universal（Apple Silicon / Intel）· macOS 12+ · 首次打开需右键 → 打开
 
-**纯本地运行**：不联网、不上传照片、不需要账号，所有处理都在本机完成。
-
-## macOS 界面
-
-| 浅色 | 深色 |
-|---|---|
+| 浅色                                                                   | 深色                                                                  |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | <img src="docs/images/macos-light.png" width="480" alt="macOS 浅色界面"> | <img src="docs/images/macos-dark.png" width="480" alt="macOS 深色界面"> |
 
 ## Android 原生版
 
-同一套相机资产与版面算法，已移植为 **Kotlin + Jetpack Compose 原生 Android App**
+同一套相机资产与版面算法，已移植为 **Kotlin + Jetpack Compose 原生 Android App**  
 （Android 10+，无需存储权限）：
 
 [**📱 Android 版说明与构建**](android/README.md) · 源码 [`android/`](android/)
 
-| 相册 | 编辑器 | 深色 |
-|---|---|---|
+| 相册                                                                         | 编辑器                                                                       | 深色                                                                      |
+| -------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | <img src="docs/images/android-library.png" width="240" alt="Android 相册多选"> | <img src="docs/images/android-phone.png" width="240" alt="Android 全屏编辑器"> | <img src="docs/images/android-dark.png" width="240" alt="Android 深色模式"> |
 
 - 系统 Photo Picker 多选 / SAF 文件选择；保存到相册 `Pictures/FotoFrame`、系统分享、复制 PNG
@@ -41,51 +37,51 @@ tools/android.sh installDebug
 
 读取 EXIF `Make` / `Model` 自动匹配；索尼按 ILCE 内部编号映射，不支持的机型会明确提示。
 
-| 品牌 | 机型 | EXIF Make / Model |
-|---|---|---|
-| Hasselblad | X2D 100C | `Hasselblad` / `X2D 100C` |
-| Hasselblad | X2D II 100C | `Hasselblad` / `X2D II 100C` |
-| Hasselblad | CFV 100C | `Hasselblad` / `CFV 100C` |
-| Leica | D-LUX 8 | `LEICA CAMERA AG` / `LEICA D-LUX 8` |
-| Leica | Q2 | `LEICA CAMERA AG` / `LEICA Q2` |
-| Leica | Q3 | `LEICA CAMERA AG` / `LEICA Q3` |
-| Leica | SL2 | `LEICA CAMERA AG` / `LEICA SL2` |
-| Leica | SL3 | `LEICA CAMERA AG` / `LEICA SL3` |
-| Panasonic | S1 II | `Panasonic` / `DC-S1M2` |
-| Panasonic | S1R II | `Panasonic` / `DC-S1RM2` |
-| Panasonic | S9 | `Panasonic` / `DC-S9` |
-| Ricoh | GR II | `RICOH IMAGING COMPANY, LTD.` / `RICOH GR II` |
-| Ricoh | GR III | `RICOH IMAGING COMPANY, LTD.` / `RICOH GR III` |
-| Ricoh | GR IIIx | `RICOH IMAGING COMPANY, LTD.` / `RICOH GR IIIx` |
-| Ricoh | GR III HDF | `RICOH IMAGING COMPANY, LTD.` / `RICOH GR III HDF` |
-| Ricoh | GR IV | `RICOH IMAGING COMPANY, LTD.` / `RICOH GR IV` |
-| Sony | A1 II | `SONY` / `ILCE-1M2` |
-| Sony | A7C II | `SONY` / `ILCE-7CM2` |
-| Sony | A7 III | `SONY` / `ILCE-7M3` |
-| Sony | A7 IV | `SONY` / `ILCE-7M4` |
-| Sony | A7 V | `SONY` / `ILCE-7M5` |
-| Sony | A7R III | `SONY` / `ILCE-7RM3` |
-| Sony | A7R IV | `SONY` / `ILCE-7RM4` |
-| Sony | A7R V | `SONY` / `ILCE-7RM5` |
-| Sony | RX1R II | `SONY` / `DSC-RX1RM2` |
-| Sony | RX1R III | `SONY` / `DSC-RX1RM3` |
+| 品牌         | 机型          | EXIF Make / Model                                  |
+| ---------- | ----------- | -------------------------------------------------- |
+| Hasselblad | X2D 100C    | `Hasselblad` / `X2D 100C`                          |
+| Hasselblad | X2D II 100C | `Hasselblad` / `X2D II 100C`                       |
+| Hasselblad | CFV 100C    | `Hasselblad` / `CFV 100C`                          |
+| Leica      | D-LUX 8     | `LEICA CAMERA AG` / `LEICA D-LUX 8`                |
+| Leica      | Q2          | `LEICA CAMERA AG` / `LEICA Q2`                     |
+| Leica      | Q3          | `LEICA CAMERA AG` / `LEICA Q3`                     |
+| Leica      | SL2         | `LEICA CAMERA AG` / `LEICA SL2`                    |
+| Leica      | SL3         | `LEICA CAMERA AG` / `LEICA SL3`                    |
+| Panasonic  | S1 II       | `Panasonic` / `DC-S1M2`                            |
+| Panasonic  | S1R II      | `Panasonic` / `DC-S1RM2`                           |
+| Panasonic  | S9          | `Panasonic` / `DC-S9`                              |
+| Ricoh      | GR II       | `RICOH IMAGING COMPANY, LTD.` / `RICOH GR II`      |
+| Ricoh      | GR III      | `RICOH IMAGING COMPANY, LTD.` / `RICOH GR III`     |
+| Ricoh      | GR IIIx     | `RICOH IMAGING COMPANY, LTD.` / `RICOH GR IIIx`    |
+| Ricoh      | GR III HDF  | `RICOH IMAGING COMPANY, LTD.` / `RICOH GR III HDF` |
+| Ricoh      | GR IV       | `RICOH IMAGING COMPANY, LTD.` / `RICOH GR IV`      |
+| Sony       | A1 II       | `SONY` / `ILCE-1M2`                                |
+| Sony       | A7C II      | `SONY` / `ILCE-7CM2`                               |
+| Sony       | A7 III      | `SONY` / `ILCE-7M3`                                |
+| Sony       | A7 IV       | `SONY` / `ILCE-7M4`                                |
+| Sony       | A7 V        | `SONY` / `ILCE-7M5`                                |
+| Sony       | A7R III     | `SONY` / `ILCE-7RM3`                               |
+| Sony       | A7R IV      | `SONY` / `ILCE-7RM4`                               |
+| Sony       | A7R V       | `SONY` / `ILCE-7RM5`                               |
+| Sony       | RX1R II     | `SONY` / `DSC-RX1RM2`                              |
+| Sony       | RX1R III    | `SONY` / `DSC-RX1RM3`                              |
 
-完整匹配规则与逐台说明见 [docs/supported_cameras.md](docs/supported_cameras.md)。
+完整匹配规则与逐台说明见 [docs/supported\_cameras.md](docs/supported_cameras.md)。
 
 ## 功能
 
-| 功能 | 说明 |
-|---|---|
-| 自动识别 | 读 EXIF Make/Model 自动匹配机型，索尼按 ILCE 内部编号映射；不支持时明确提示 |
-| 拖拽导入 | 把 JPG/PNG/HEIC/TIFF/DNG 直接拖进窗口（原生 NSView 拖拽目标） |
+| 功能   | 说明                                                                                              |
+| ---- | ----------------------------------------------------------------------------------------------- |
+| 自动识别 | 读 EXIF Make/Model 自动匹配机型，索尼按 ILCE 内部编号映射；不支持时明确提示                                               |
+| 拖拽导入 | 把 JPG/PNG/HEIC/TIFF/DNG 直接拖进窗口（原生 NSView 拖拽目标）                                                  |
 | 容器格式 | EXIF 解析覆盖 JPEG(APP1) · TIFF/DNG · PNG(`eXIf`) · HEIC/HEIF(`meta`→`iinf`/`iloc`)；无 EXIF 的图给出温和提示 |
-| 批量队列 | 多选导入，队列逐张显示识别结果，支持逐条移除 |
-| 批量导出 | 选一个文件夹，按 `<原名>_framed.png` 全部导出 |
-| 主题 | 固定相纸灰背景 · 底部原图左右下三边出血贴边 · 3 档版式松紧 · 输出长边 1600/2400/3200 |
-| 外观 | 跟随系统浅色/深色；窗口无标题栏，工具栏与红绿灯同高 |
-| 屏幕 | 相机屏幕按官方显示区比例（4:3 / 3:2 / 16:9，逐台校准）cover 裁剪填入，四周保留边框；比例不符的机型按真实相机留黑边 |
-| 复制 | ⌘⇧C 把成图以 PNG 写入系统剪贴板（NSPasteboard） |
-| 快捷键 | ⌘O 导入 · ⌘E 导出当前 · ⌘⇧C 复制 |
+| 批量队列 | 多选导入，队列逐张显示识别结果，支持逐条移除                                                                          |
+| 批量导出 | 选一个文件夹，按 `<原名>_framed.png` 全部导出                                                                 |
+| 主题   | 固定相纸灰背景 · 底部原图左右下三边出血贴边 · 3 档版式松紧 · 输出长边 1600/2400/3200                                         |
+| 外观   | 跟随系统浅色/深色；窗口无标题栏，工具栏与红绿灯同高                                                                      |
+| 屏幕   | 相机屏幕按官方显示区比例（4:3 / 3:2 / 16:9，逐台校准）cover 裁剪填入，四周保留边框；比例不符的机型按真实相机留黑边                            |
+| 复制   | ⌘⇧C 把成图以 PNG 写入系统剪贴板（NSPasteboard）                                                              |
+| 快捷键  | ⌘O 导入 · ⌘E 导出当前 · ⌘⇧C 复制                                                                        |
 
 ## 隐私
 
@@ -103,7 +99,7 @@ tools/android.sh installDebug
 - ✅ 界面：工具栏 + 纸面排版的工作台（当前照片 · 作品 · 队列），浅色/深色跟随 macOS 自动切换
 - ✅ 拖拽导入、批量导出、复制到剪贴板
 - ✅ 端到端验证通过：真实 macOS 应用读样片 → EXIF 识别（索尼 ILCE 别名）→ 渲染导出
-- ✅ Android 端到端验证：相册多选 → 批量套框/单张编辑 → 相册 PNG（1600/2400/3200），
+- ✅ Android 端到端验证：相册多选 → 批量套框/单张编辑 → 相册 PNG（1600/2400/3200），  
   深色模式、平板自适应、EXIF 方向旋转、分享/剪贴板均走通
 
 ## 目录
@@ -126,18 +122,18 @@ docs/           架构与机型文档
 
 ## 工具
 
-| 脚本 | 作用 |
-|---|---|
-| `tools/flutter.sh` | Flutter 环境封装（隔离 HOME/PUB_CACHE 到 .toolchain） |
-| `tools/android.sh` | Android 构建封装（自动找 JDK 17+ 与 Android SDK，转调 gradlew） |
-| `tools/sync_assets.sh` | 把 assets/cameras 打平同步进 app 资产目录，生成 catalog.json |
-| `tools/annotate_screen.py` | 屏幕区域自动检测（白底轮廓 + 局部平滑度最大矩形） |
-| `tools/measure_screens.py` | 屏幕标注审计：标注/实测/官方比例对照（`--debug` 出叠加图） |
-| `tools/annotate_opening.py` | 检测屏幕开口（玻璃内沿）写入 `screen.opening`，成图上把照片外那圈玻璃灰压黑 |
-| `tools/trim_assets.py` | 裁剪白边/透明底并同步平移屏幕标注（`--audit` 体检机身居中偏移，`--force` 重裁） |
-| `tools/grid.py` | 坐标网格叠加，手工精修标注用 |
-| `tools/make_samples.py` | 生成带 EXIF 的测试照片 |
-| `tools/icon/` | app 图标「Fo」字标：几何自绘、7 个尺寸一键装进 AppIcon |
+| 脚本                          | 作用                                                 |
+| --------------------------- | -------------------------------------------------- |
+| `tools/flutter.sh`          | Flutter 环境封装（隔离 HOME/PUB_CACHE 到 .toolchain）       |
+| `tools/android.sh`          | Android 构建封装（自动找 JDK 17+ 与 Android SDK，转调 gradlew） |
+| `tools/sync_assets.sh`      | 把 assets/cameras 打平同步进 app 资产目录，生成 catalog.json    |
+| `tools/annotate_screen.py`  | 屏幕区域自动检测（白底轮廓 + 局部平滑度最大矩形）                         |
+| `tools/measure_screens.py`  | 屏幕标注审计：标注/实测/官方比例对照（`--debug` 出叠加图）                |
+| `tools/annotate_opening.py` | 检测屏幕开口（玻璃内沿）写入 `screen.opening`，成图上把照片外那圈玻璃灰压黑     |
+| `tools/trim_assets.py`      | 裁剪白边/透明底并同步平移屏幕标注（`--audit` 体检机身居中偏移，`--force` 重裁） |
+| `tools/grid.py`             | 坐标网格叠加，手工精修标注用                                     |
+| `tools/make_samples.py`     | 生成带 EXIF 的测试照片                                     |
+| `tools/icon/`               | app 图标「Fo」字标：几何自绘、7 个尺寸一键装进 AppIcon                |
 
 ## 开发
 
@@ -176,12 +172,12 @@ tools/android.sh installDebug        # 需已连接设备/模拟器
 4. 手工修正个别标注（亮屏图、反光渐变图自动检测会偏差）
 5. `tools/sync_assets.sh` 打包
 
-> 相机背面图取自各品牌官方产品图，原始资产（`assets/cameras/`）不随仓库分发；
+> 相机背面图取自各品牌官方产品图，原始资产（`assets/cameras/`）不随仓库分发；  
 > 仓库内 `app/assets/cameras/` 已包含打包好的运行所需文件，可直接构建运行。
 
 ## 移植路线
 
-- ✅ **Android 原生**：Kotlin/Compose 重写 UI 与平台层，核心 EXIF/匹配/几何逐行移植；
+- ✅ **Android 原生**：Kotlin/Compose 重写 UI 与平台层，核心 EXIF/匹配/几何逐行移植；  
   资产直接复用 `app/assets/cameras`，不额外复制
 - `lib/core/` 纯 Dart（EXIF 解析、机型匹配、版面几何、单应变换）——其他平台可继续复用
 - `lib/render/` 仅依赖 Flutter Canvas——Windows 等 Flutter 桌面平台通用
