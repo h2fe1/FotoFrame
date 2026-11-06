@@ -4,7 +4,7 @@ assets/cameras/
 
 # 大体量生成物（本地保留，不入库）
 docs/design/
-renders/*_framed.png
+renders/
 
 # 本地草稿与缓存（不公开）
 .work/
@@ -20,3 +20,7 @@ build/
 pubspec.lock
 app/macos/Flutter/ephemeral/
 app/macos/Pods/
+
+# Android 本地演示包（签名后的 APK 不入库）
+dist/*.apk
+dist/*.idsig

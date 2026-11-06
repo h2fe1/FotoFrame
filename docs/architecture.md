@@ -9,8 +9,9 @@
 
 ## 技术选型
 
-Flutter 单代码库覆盖 macOS / Windows / Android / iOS。
-为保证可移植性，代码分三层：
+macOS 用 Flutter；Android 已单独用 Kotlin + Jetpack Compose 原生实现（见下）。
+Windows/iOS 仍可继续走 Flutter，共用同一套资产与几何规则。
+为保证可移植性，Flutter 代码分三层：
 
 ```
 app/
@@ -30,6 +31,20 @@ assets/cameras/<brand>/<slug>/
 tools/                   # 资产处理脚本（裁剪、标注辅助）
 docs/                    # 设计文档
 ```
+
+### Android 原生实现
+
+`android/` 是对这套架构的原生重写，不是 Flutter 打包：
+
+- `core/` 用 Kotlin 逐行对应本文件中的 EXIF 解析、机型匹配、版面几何与单应变换；
+- `render/` 用 Android `Canvas` / `Matrix.setPolyToPoly` 完成同样的透视合成，
+  相机图用 Skia `BlendMode.MULTIPLY` 融入相纸灰底；
+- `platform/` 用 Photo Picker / SAF 导入、MediaStore 写相册、系统分享与剪贴板；
+- `ui/` 用 Material 3 重做：相册网格多选 → 全屏编辑器 → 设置；照片信息用 Bottom Sheet；
+- 相机资产不复制，Gradle 直接把 `app/assets/cameras` 加进 APK 的 assets。
+
+两端共用同一份 `catalog.json` 与屏幕四角标注，改资产或改几何时只需要同步一处。
+详见 [`android/README.md`](../android/README.md)。
 
 **复用原则**：`lib/core` 不 import 任何 `package:flutter/*`，
 输入输出都是字节、几何数据和不可变模型；渲染与平台 IO 只放在 `render/` 与 `platform/`。

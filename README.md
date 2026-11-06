@@ -10,6 +10,27 @@ Universal（Apple Silicon / Intel）· macOS 12+ · 首次打开需右键 → �
 
 **纯本地运行**：不联网、不上传照片、不需要账号，所有处理都在本机完成。
 
+## Android 原生版
+
+同一套相机资产与版面算法，已移植为 **Kotlin + Jetpack Compose 原生 Android App**
+（Android 10+，无需存储权限）：
+
+[**📱 Android 版说明与构建**](android/README.md) · 源码 [`android/`](android/)
+
+| 相册 | 编辑器 | 深色 |
+|---|---|---|
+| <img src="docs/images/android-library.png" width="240" alt="Android 相册多选"> | <img src="docs/images/android-phone.png" width="240" alt="Android 全屏编辑器"> | <img src="docs/images/android-dark.png" width="240" alt="Android 深色模式"> |
+
+- 系统 Photo Picker 多选 / SAF 文件选择；保存到相册 `Pictures/FotoFrame`、系统分享、复制 PNG
+- 相册网格多选 + 批量套框；全屏成图编辑器 + 底部版式/尺寸面板；照片信息用 Bottom Sheet
+- 原生底部导航、FAB、SegmentedButton、长按多选；深色模式与平板自适应
+- 与 macOS 版共用 26 台相机资产，EXIF 匹配、版式、单应透视、cover/contain 规则一致
+
+```bash
+tools/android.sh assembleDebug     # 产物 android/app/build/outputs/apk/debug/
+tools/android.sh installDebug
+```
+
 ## 支持的相机机型（26 台）
 
 读取 EXIF `Make` / `Model` 自动匹配；索尼按 ILCE 内部编号映射，不支持的机型会明确提示。
@@ -70,15 +91,19 @@ Universal（Apple Silicon / Intel）· macOS 12+ · 首次打开需右键 → �
 ## 当前状态
 
 - ✅ macOS 版可构建运行（Flutter 3.47.9 stable）
+- ✅ Android 原生版可构建运行（Kotlin 2.1 / Jetpack Compose / minSdk 29 / targetSdk 35）
 - ✅ 核心逻辑纯 Dart、零 Flutter 依赖（`app/lib/core/`），为 Windows/Android/iOS 移植做好准备
 - ✅ 26 台相机资产全部按实物素材逐一标定屏幕四角
 - ✅ 界面：工具栏 + 纸面排版的工作台（当前照片 · 作品 · 队列），浅色/深色跟随 macOS 自动切换
 - ✅ 拖拽导入、批量导出、复制到剪贴板
 - ✅ 端到端验证通过：真实 macOS 应用读样片 → EXIF 识别（索尼 ILCE 别名）→ 渲染导出
+- ✅ Android 端到端验证：相册多选 → 批量套框/单张编辑 → 相册 PNG（1600/2400/3200），
+  深色模式、平板自适应、EXIF 方向旋转、分享/剪贴板均走通
 
 ## 目录
 
 ```
+android/        Android 原生应用（Kotlin + Jetpack Compose，复用 app/assets/cameras）
 app/            Flutter 应用（macOS 先行，可扩展 Windows/Android/iOS）
   lib/core/     纯 Dart 核心：EXIF 解析、机型匹配、版面几何、单应变换
   lib/render/   Flutter Canvas 渲染层
@@ -98,11 +123,12 @@ docs/           架构与机型文档
 | 脚本 | 作用 |
 |---|---|
 | `tools/flutter.sh` | Flutter 环境封装（隔离 HOME/PUB_CACHE 到 .toolchain） |
+| `tools/android.sh` | Android 构建封装（自动找 JDK 17+ 与 Android SDK，转调 gradlew） |
 | `tools/sync_assets.sh` | 把 assets/cameras 打平同步进 app 资产目录，生成 catalog.json |
 | `tools/annotate_screen.py` | 屏幕区域自动检测（白底轮廓 + 局部平滑度最大矩形） |
 | `tools/measure_screens.py` | 屏幕标注审计：标注/实测/官方比例对照（`--debug` 出叠加图） |
 | `tools/annotate_opening.py` | 检测屏幕开口（玻璃内沿）写入 `screen.opening`，成图上把照片外那圈玻璃灰压黑 |
-| `tools/trim_assets.py` | 裁剪白边并同步平移屏幕标注 |
+| `tools/trim_assets.py` | 裁剪白边/透明底并同步平移屏幕标注（`--audit` 体检机身居中偏移，`--force` 重裁） |
 | `tools/grid.py` | 坐标网格叠加，手工精修标注用 |
 | `tools/make_samples.py` | 生成带 EXIF 的测试照片 |
 | `tools/icon/` | app 图标「Fo」字标：几何自绘、7 个尺寸一键装进 AppIcon |
@@ -125,11 +151,22 @@ cd app
   --dart-define=SELFTEST=<照片路径> --dart-define=SELFTEST_OUT=<输出.png>
 ```
 
+## Android 开发
+
+```bash
+tools/android.sh testDebugUnitTest   # JVM 单元测试
+tools/android.sh lintDebug
+tools/android.sh assembleDebug       # APK
+tools/android.sh installDebug        # 需已连接设备/模拟器
+```
+
+详见 [android/README.md](android/README.md)。
+
 ## 资产工作流
 
 1. 收集官方背面图 → `assets/cameras/<brand>/<slug>/back.jpg` + `meta.json`
 2. `tools/annotate_screen.py` 自动检测屏幕四边形，生成 `screen_debug.png` 供核对
-3. `tools/trim_assets.py` 裁白边（原图备份为 back_untrimmed）
+3. `tools/trim_assets.py` 裁白边/透明底（原图备份为 back_untrimmed；`--audit` 可先体检机身是否居中）
 4. 手工修正个别标注（亮屏图、反光渐变图自动检测会偏差）
 5. `tools/sync_assets.sh` 打包
 
@@ -138,10 +175,11 @@ cd app
 
 ## 移植路线
 
-- `lib/core/` 纯 Dart（EXIF 解析、机型匹配、版面几何、单应变换）——直接复用
-- `lib/render/` 仅依赖 Flutter Canvas——全 Flutter 平台通用
-- `lib/platform/` 与 UI 层按需替换：Windows 用同套 Flutter 桌面支持；
-  Android/iOS 替换文件选择/保存为系统相册 API
+- ✅ **Android 原生**：Kotlin/Compose 重写 UI 与平台层，核心 EXIF/匹配/几何逐行移植；
+  资产直接复用 `app/assets/cameras`，不额外复制
+- `lib/core/` 纯 Dart（EXIF 解析、机型匹配、版面几何、单应变换）——其他平台可继续复用
+- `lib/render/` 仅依赖 Flutter Canvas——Windows 等 Flutter 桌面平台通用
+- iOS 若走原生，可参考 `android/` 的分层与渲染实现，替换相册/分享/选择器 API
 
 ## License
 
