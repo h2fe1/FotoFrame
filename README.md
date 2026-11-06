@@ -10,6 +10,12 @@ Universal（Apple Silicon / Intel）· macOS 12+ · 首次打开需右键 → �
 
 **纯本地运行**：不联网、不上传照片、不需要账号，所有处理都在本机完成。
 
+## macOS 界面
+
+| 浅色 | 深色 |
+|---|---|
+| <img src="docs/images/macos-light.png" width="480" alt="macOS 浅色界面"> | <img src="docs/images/macos-dark.png" width="480" alt="macOS 深色界面"> |
+
 ## Android 原生版
 
 同一套相机资产与版面算法，已移植为 **Kotlin + Jetpack Compose 原生 Android App**
